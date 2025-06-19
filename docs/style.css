@@ -77,12 +77,12 @@ main {
   border-left: 10px solid var(--color-red);
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  max-width: 320px;
-  min-width: 260px;
+  width: 300px;
+  min-height: 375px;
   padding: 1.25rem;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: start;
   font-size: 1rem;
   line-height: 1.6;
 }

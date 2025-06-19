@@ -7,6 +7,9 @@ pip
 setuptools
 wheel
 
+# YAML parsing
+PyYAML
+
 # Civic Interconnect library
 -e git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main#egg=civic-lib
 

@@ -47,13 +47,15 @@ pre-commit autoupdate --repo https://github.com/pre-commit/pre-commit-hooks
 ruff check . --fix
 pre-commit run --all-files
 
-git add .
-git status
-git diff --cached
-git commit -m "Release v1.0.0"
+# Optional: delete existing tag
 git tag -d v1.0.0
-git push -u origin main
-git tag v1.0.0
+git push origin :refs/tags/v1.0.0
+
+# State, commit, create the release tag, and push
+git add .
+git commit -m "Release v1.0.0"
+git tag -a v1.0.0 -m "Release v1.0.0"
+git push origin main
 git push origin v1.0.0
 ```
 
