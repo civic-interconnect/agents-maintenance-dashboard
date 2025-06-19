@@ -1,0 +1,38 @@
+name: Update Status JSON
+
+on:
+  schedule:
+    - cron: '10 5 * * *'  # Run daily at 5:10am UTC
+  workflow_dispatch:      # Allow manual triggering also
+  push:
+    branches:
+      - main  # Run on pushes to the main branch
+
+jobs:
+  update:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repo
+        uses: actions/checkout@v3
+
+      - name: Setup Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.12.x'
+
+      - name: Install dependencies
+        run: |
+          pip install --upgrade pip setuptools wheel --prefer-binary
+          pip install --upgrade -r requirements.txt --timeout 100
+
+      - name: Run Status Script
+        run: python scripts/generate_status.py
+
+      - name: Commit and Push if Updated
+        run: |
+          git config user.name "CI Bot"
+          git config user.email "actions@github.com"
+          git add docs/status.json
+          git diff --quiet && echo "No changes" || git commit -m "Update agent status [skip ci]"
+          git push

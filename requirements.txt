@@ -1,0 +1,14 @@
+# ======================================================
+# ESSENTIAL EXTERNAL TOOLS
+# ======================================================
+
+# Up-to-date package management tools
+pip
+setuptools
+wheel
+
+# Civic Interconnect library
+-e git+https://github.com/civic-interconnect/civic-interconnect-lib.git@main#egg=civic-lib
+
+# Make HTTP web requests
+requests
