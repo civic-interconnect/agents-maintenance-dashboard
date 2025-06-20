@@ -15,6 +15,5 @@ repos:
       - id: ruff-check
         types_or: [python, pyi]
         args: [--fix]
-        exclude: ^docs/
       - id: ruff-format
         types_or: [python, pyi]

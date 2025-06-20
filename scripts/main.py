@@ -11,9 +11,9 @@ and key information from their most recent reports.
 import json
 import requests
 import yaml
-from civic_lib import log_utils
-from civic_lib.date_utils import today_utc_str
-from civic_lib.config_utils import load_version
+from civic_lib_core import log_utils
+from civic_lib_core.date_utils import today_utc_str
+from civic_lib_core.config_utils import load_version
 
 from pathlib import Path
 
@@ -34,6 +34,18 @@ def fetch_yaml_report_data(report_url):
         response = requests.get(report_url)
         if response.status_code == 200:
             return yaml.safe_load(response.text)
+        elif response.status_code == 404 and "schema-report.yaml" in report_url:
+            # Try change-report.yaml instead
+            fallback_url = report_url.replace(
+                "schema-report.yaml", "change-report.yaml"
+            )
+            fallback_response = requests.get(fallback_url)
+            if fallback_response.status_code == 200:
+                return yaml.safe_load(fallback_response.text)
+            else:
+                logger.warning(
+                    f"Fallback also failed: {fallback_url} (status {fallback_response.status_code})"
+                )
         else:
             logger.warning(
                 f"Could not fetch YAML report: {report_url} (status {response.status_code})"
