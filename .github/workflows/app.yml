@@ -1,4 +1,4 @@
-name: Update Status JSON
+name: Update App JSON
 
 on:
   schedule:
@@ -27,7 +27,7 @@ jobs:
           pip install --upgrade -r requirements.txt --timeout 100
 
       - name: Run Status Script
-        run: python scripts/generate_status.py
+        run: python scripts/main.py
 
       - name: Commit and Push if Updated
         run: |
