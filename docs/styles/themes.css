@@ -1,0 +1,31 @@
+/* =========================
+   styles/themes.css
+   ========================= */
+body[data-theme="dark"] {
+  background-color: #222222;
+  color: #e0e0e0;
+}
+
+/* ==================================================
+   THEME TOGGLE BUTTON
+   ================================================== */
+
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: black;
+  color: var(--color-white);
+}

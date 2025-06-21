@@ -1,0 +1,77 @@
+/* =========================
+   components/ci-agent.css
+   ========================= */
+.agent-card {
+  background: var(--color-white);
+  border-left: 10px solid var(--color-red);
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  width: 300px;
+  min-height: 375px;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.agent-card h2 {
+  font-size: 1.1rem;
+  margin-bottom: 0.25rem;
+  color: var(--color-light-blue);
+}
+
+.agent-card small {
+  color: gray;
+  font-size: 0.75rem;
+}
+
+.agent-card a {
+  color: var(--color-light-blue);
+  text-decoration: none;
+}
+
+.agent-card a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   STATUS STYLES
+   ================================================== */
+.status-ok {
+  color: green;
+  font-weight: bold;
+}
+
+.status-warn {
+  color: orange;
+  font-weight: bold;
+}
+
+.status-bad {
+  color: var(--color-red);
+  font-weight: bold;
+}
+
+/* ==================================================
+   THEME: DARK MODE (Shadow DOM friendly)
+   ================================================== */
+
+:host([data-theme="dark"]) .agent-card {
+  background-color: #3d3d3d;
+  border-left-color: var(--color-white);
+  color: var(--color-white);
+}
+
+:host([data-theme="dark"]) .agent-card h2 {
+  color: var(--color-white);
+}
+
+:host([data-theme="dark"]) .agent-card small {
+  color: #ccc;
+}
+
+:host([data-theme="dark"]) .agent-card a {
+  color: #7dc9ff;
+}

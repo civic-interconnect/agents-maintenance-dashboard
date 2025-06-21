@@ -27,7 +27,7 @@
     <!-- 5. Preconnect & preload critical resources -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link rel="preload" href="style.css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
+    <link rel="preload" href="./styles/app.css" as="style" onload="this.onload=null;this.rel='stylesheet';" />
 
     <!-- 6. Icons and manifest (smallest to largest) -->
     <link rel="icon" href="./favicon.ico" crossorigin="anonymous" />
@@ -39,11 +39,16 @@
     <!-- 7. Fonts & CSS -->
     <link href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700&display=swap" rel="stylesheet" />
     <noscript>
-        <link rel="stylesheet" href="style.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="./styles/app.css" type="text/css" media="all" />
     </noscript>
 </head>
 
 <body>
+    <button class="theme-toggle"
+        onclick="document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';">
+        🔆
+    </button>
+
     <div class="page-wrapper">
         <ci-header></ci-header>
         <main>

@@ -1,0 +1,33 @@
+/* ==================================================
+   FOOTER
+   ================================================== */
+
+.ci-footer {
+  margin-top: 2em;
+  padding: 1em;
+  background-color: #eee;
+  color: #222;
+  text-align: center;
+}
+
+.ci-footer a {
+  color: var(--color-light-blue);
+  text-decoration: none;
+}
+
+.ci-footer a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   THEME: DARK MODE
+   ================================================== */
+
+body[data-theme="dark"] .ci-footer {
+  background-color: var(--color-blue);
+  color: #e0e0e0;
+}
+
+body[data-theme="dark"] .ci-footer a {
+  color: #7dc9ff;
+}

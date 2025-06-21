@@ -1,0 +1,60 @@
+/* =========================
+   styles/base.css
+   ========================= */
+html {
+  font-display: swap;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+/* ==================================================
+   STICKY FOOTER
+   ================================================== */
+
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+
+.page-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+main {
+  flex: 1;
+}
+
+h2,
+h3 {
+  color: var(--color-blue);
+}
+
+a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* ==================================================
+   GRID + CARD LAYOUT
+   ================================================== */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}

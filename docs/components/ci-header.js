@@ -1,17 +1,33 @@
 // components/ci-header.js
 
+const styleURL = new URL('./styles/ci-header.css', import.meta.url);
+
+
 class CiHeader extends HTMLElement {
-  connectedCallback() {
-    this.innerHTML = `
-  <header style="background: var(--color-blue); color: white; padding: 1rem; text-align: center;">
-    <h1>Civic Interconnect Dashboard</h1>
-    <h1>Agent Status and Mapping Overview</h1>
-          <button class="theme-toggle" onclick="document.body.dataset.theme = document.body.dataset.theme === 'dark' ? 'light' : 'dark';">
-      🔆
-    </button>
-  </header>
-`;
+    constructor() {
+    super();
+    const shadow = this.attachShadow({ mode: 'open' });
+
+    // Attach external CSS
+    const link = document.createElement('link');
+    link.setAttribute('rel', 'stylesheet');
+    link.setAttribute('href', styleURL);
+    shadow.appendChild(link);
+
+    // Container for content
+    this.container = document.createElement('div');
+    shadow.appendChild(this.container);
   }
+
+connectedCallback() {
+  this.container.innerHTML = `
+    <header class="ci-header">
+      <h1>Civic Interconnect Dashboard</h1>
+      <h1>Agent Status and Mapping Overview</h1>
+    </header>
+  `;
+}
+
 }
 
 customElements.define("ci-header", CiHeader);
