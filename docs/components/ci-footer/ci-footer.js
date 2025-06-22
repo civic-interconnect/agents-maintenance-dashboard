@@ -39,7 +39,7 @@ class CiFooter extends HTMLElement {
       siteAnchor.setAttribute(
         'href',
         this.getAttribute('siteURL') ||
-          'https://civic-interconnect.github.io/agents-maintenance-dashboard/'
+          'https://civic-interconnect.github.io/app-agents/'
       );
     }
 
@@ -49,7 +49,7 @@ class CiFooter extends HTMLElement {
       sourceAnchor.setAttribute(
         'href',
         this.getAttribute('sourceURL') ||
-          'https://github.com/civic-interconnect/agents-maintenance-dashboard'
+          'https://github.com/civic-interconnect/app-agents'
       );
     }
   }

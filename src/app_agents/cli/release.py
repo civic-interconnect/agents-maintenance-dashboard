@@ -91,7 +91,7 @@ def main() -> None:
         result = subprocess.run("git diff --cached --quiet", shell=True)
         if result.returncode == 1:
             run(f'git commit -m "Release: {tag}"')
-            run("git push origin main --force")
+            run("git push origin main")
         else:
             typer.echo("No changes to commit.")
 

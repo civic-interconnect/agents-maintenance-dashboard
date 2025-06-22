@@ -6,8 +6,8 @@ First, fork the repo. Git clone your repo to your machine. Open project repo in 
 Open a terminal (commands are for PowerShell).
 
 ```powershell
-git clone https://github.com/civic-interconnect/agents-maintenance-dashboard.git
-cd agents-maintenance-dashboard
+git clone https://github.com/civic-interconnect/app-agents.git
+cd app-agents
 py -m venv .venv
 .\.venv\Scripts\activate
 py src\setup\init_venv.py
@@ -30,7 +30,7 @@ Visit: <http://localhost:8000>
 After verifying changes:
 
 ```powershell
-app-agents bump-version 1.0.2 1.0.3
+app-agents bump-version 1.0.3 1.0.4
 app-agents release
 ```
 

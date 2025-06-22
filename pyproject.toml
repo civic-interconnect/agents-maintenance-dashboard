@@ -1,6 +1,6 @@
 [project]
-name = "agents-maintenance-dashboard"
-version = "1.0.3"
+name = "app-agents"
+version = "1.0.4"
 description = "Agent maintenance dashboard for Civic Interconnect"
 authors = [
   { name = "Civic Interconnect", email = "info@civic-interconnect.org" }
@@ -27,8 +27,8 @@ dev = [
 ]
 
 [project.urls]
-"Homepage" = "https://civic-interconnect.github.io/agents-maintenance-dashboard/"
-"Source" = "https://github.com/civic-interconnect/agents-maintenance-dashboard"
+"Homepage" = "https://civic-interconnect.github.io/app-agents/"
+"Source" = "https://github.com/civic-interconnect/app-agents"
 
 [project.scripts]
 app-agents = "app_agents.cli.cli:app"
