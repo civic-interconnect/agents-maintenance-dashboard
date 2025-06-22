@@ -1,0 +1,65 @@
+/* =========================
+   ci-header.css
+   ========================= */
+
+:host {
+  display: block;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
+}
+
+/* Header wrapper styles */
+.ci-header {
+  background: var(--color-blue);
+  color: var(--color-white);
+  padding: 1rem;
+  text-align: center;
+}
+
+/* Match heading styles from base.css */
+.ci-header h1,
+.ci-header h2,
+.ci-header h3 {
+  margin: 0.25em 0;
+  color: var(--color-white);
+  font-family: "Roboto", sans-serif;
+}
+
+/* Slot-supplied h2/h3 titles should still respect theme */
+.ci-header h2,
+.ci-header h3 {
+  color: var(--color-blue);
+}
+
+/* Match original link styles */
+.ci-header a {
+  color: var(--color-blue);
+  text-decoration: none;
+}
+
+.ci-header a:hover {
+  text-decoration: underline;
+}
+
+/* Scoped Theme Toggle button (from themes.css) */
+.theme-toggle {
+  position: fixed;
+  top: 1rem;
+  right: 1rem;
+  background-color: var(--color-white);
+  border: none;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+
+.theme-toggle:hover {
+  background-color: black;
+  color: var(--color-white);
+}

@@ -1,33 +1,36 @@
-/* ==================================================
-   FOOTER
-   ================================================== */
+/* =========================
+   ci-footer.css
+   ========================= */
 
-.ci-footer {
+:host {
+  display: block;
   margin-top: 2em;
   padding: 1em;
   background-color: #eee;
   color: #222;
   text-align: center;
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5;
 }
 
-.ci-footer a {
+/* Scoped link styles */
+a {
   color: var(--color-light-blue);
   text-decoration: none;
 }
 
-.ci-footer a:hover {
+a:hover {
   text-decoration: underline;
 }
 
 /* ==================================================
    THEME: DARK MODE
    ================================================== */
-
-body[data-theme="dark"] .ci-footer {
+:host-context(body[data-theme="dark"]) {
   background-color: var(--color-blue);
   color: #e0e0e0;
 }
 
-body[data-theme="dark"] .ci-footer a {
+:host-context(body[data-theme="dark"]) a {
   color: #7dc9ff;
 }

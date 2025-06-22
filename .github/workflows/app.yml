@@ -26,11 +26,11 @@ jobs:
 
       - name: Install dependencies
         run: |
-          pip install --upgrade pip setuptools wheel --prefer-binary
-          pip install --upgrade -r requirements.txt --timeout 100
+          python -m pip install --upgrade pip setuptools wheel --prefer-binary
+          python -m pip install  .[dev] --timeout 100 --no-cache-dir
 
       - name: Run Status Script
-        run: python scripts/main.py
+        run: python src/setup/fetch_status.py
 
       - name: Commit and Push if Updated
         run: |

@@ -1,5 +1,5 @@
 {
-  "name": "Civic Interconnect Dashboard",
+  "name": "Civic Interconnect Agent Dashboard",
   "description": "A dashboard for monitoring agent statuses.",
   "short_name": "CI Dashboard",
   "start_url": "./index.html",

@@ -1,36 +1,24 @@
 # agents-maintenance-dashboard
 
-
-> Agent Status Dashboard for Civic Interconnect
-
-[![Version](https://img.shields.io/badge/version-v1.0.2-blue)](https://github.com/civic-interconnect/agents-maintenance-dashboard/releases)
+[![Version](https://img.shields.io/badge/version-v1.0.3-blue)](https://github.com/civic-interconnect/agents-maintenance-dashboard/releases)
 [![License: MIT](https://img.shields.io/badge/license-MIT-green.svg)](https://opensource.org/licenses/MIT)
 [![Build Status](https://github.com/civic-interconnect/agents-maintenance-dashboard/actions/workflows/app.yml/badge.svg)](https://github.com/civic-interconnect/agents-maintenance-dashboard/actions)
 
+> Agent Status Dashboard for Civic Interconnect
+
 **Live Dashboard:** [View Live Site](https://civic-interconnect.github.io/agents-maintenance-dashboard/)
 
-GitHub Pages dashboard displaying Civic Interconnect Agent status, commit info, schema sources, and success indicators.
+Displays Civic Interconnect Agent health, commit status, schema source, and key metrics from agent YAML reports.
+
+## Development
+
+See [DEVELOPER.md](./DEVELOPER.md)
 
 ## Deployment
 
-This agent is scheduled to run automatically using GitHub Actions.
+Dashboard updates automatically via GitHub Actions.
 
-## Local Development
-
-See [REF_DEV.md](./REF_DEV.md). Then:
-
-```shell
-py scripts/main.py
-```
-
-## Test Web App Locally
-
-```powershell
-cd docs
-py -m http.server 8000
-```
-
-Visit: <http://localhost:8000>
+## View Deployed Dashboard
 
 [View Live Site](https://civic-interconnect.github.io/agents-maintenance-dashboard/)
 

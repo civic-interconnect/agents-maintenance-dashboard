@@ -1,35 +1,38 @@
 {
-  "dashboard_version": "1.0.1",
-  "generated": "2025-06-20",
+  "dashboard_version": "1.0.3",
+  "generated": "2025-06-22",
   "agents": [
     {
       "name": "agents-monitor-schema",
       "repo": "https://github.com/civic-interconnect/agents-monitor-schema",
       "version": "v1.0.1",
-      "last_commit": "2025-06-20",
+      "last_commit": "2025-06-22",
       "action_status": "Success",
       "schema_source": "OCD",
-      "OCD Divisions": "OCD repository updated",
-      "OpenStates": "OpenStates Introspection access not yet granted"
+      "report_url": "https://raw.githubusercontent.com/civic-interconnect/agents-monitor-schema/main/reports/2025-06-22/2025-06-22-schema-report.yaml",
+      "ocd_divisions": "OCD repository updated",
+      "openstates": "OpenStates Introspection access not yet granted"
     },
     {
       "name": "agents-monitor-mapping",
       "repo": "https://github.com/civic-interconnect/agents-monitor-mapping",
       "version": "v0.2.1",
-      "last_commit": "2025-06-20",
+      "last_commit": "2025-06-22",
       "action_status": "Success",
       "schema_source": "OCD",
-      "OCD Divisions": "OCD repository updated",
-      "Mapping Records": 56,
-      "County Scaffold Rows": 143933
+      "report_url": "https://raw.githubusercontent.com/civic-interconnect/agents-monitor-mapping/main/reports/2025-06-22/2025-06-22-mapping-report.yaml",
+      "ocd_divisions": "OCD repository updated",
+      "mapping_records": 56,
+      "county_scaffold_rows": 143933
     },
     {
       "name": "agents-monitor-bills",
       "repo": "https://github.com/civic-interconnect/agents-monitor-bills",
       "version": "v0.2.1",
-      "last_commit": "2025-06-20",
+      "last_commit": "2025-06-22",
       "action_status": "Success",
       "schema_source": "OpenStates",
+      "report_url": "https://raw.githubusercontent.com/civic-interconnect/agents-monitor-bills/main/reports/2025-06-22/2025-06-22-bills-report.yaml",
       "total_jurisdictions": 46,
       "jurisdictions": "OpenStates Bill Monitor access not yet granted"
     },
@@ -37,10 +40,11 @@
       "name": "agents-monitor-people",
       "repo": "https://github.com/civic-interconnect/agents-monitor-people",
       "version": "v0.2.1",
-      "last_commit": "2025-06-20",
+      "last_commit": "2025-06-22",
       "action_status": "Success",
       "schema_source": "OpenStates",
-      "People Summary": "OpenStates People Monitor access not yet granted"
+      "report_url": "https://raw.githubusercontent.com/civic-interconnect/agents-monitor-people/main/reports/2025-06-22/2025-06-22-people-report.yaml",
+      "people_summary": "OpenStates People Monitor access not yet granted"
     }
   ]
 }
