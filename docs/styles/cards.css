@@ -1,0 +1,21 @@
+/* ==================================================
+   GRID + CARD LAYOUT
+   ================================================== */
+.card-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  padding: 2rem 1rem;
+}
+
+
+/* =========================
+   RESPONSIVE CARD STYLES
+   ========================= */
+@media (max-width: 600px) {
+  .rep-card {
+    min-width: 90%;
+    font-size: 1rem;
+  }
+}

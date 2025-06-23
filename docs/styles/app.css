@@ -1,7 +1,7 @@
 /* =========================
    styles/app.css
    ========================= */
-@import "./tokens.css";
-@import "./base.css";
-@import "./themes.css";
-@import "./responsive.css";
+@import url("https://civic-interconnect.github.io/app-core/styles/tokens.css");
+@import url("https://civic-interconnect.github.io/app-core/styles/themes.css");
+@import url("https://civic-interconnect.github.io/app-core/styles/base.css");
+@import "./cards.css";
