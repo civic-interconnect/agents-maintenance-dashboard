@@ -1,11 +1,13 @@
 {
-  "name": "Civic Interconnect Agent Dashboard",
-  "description": "A dashboard for monitoring agent statuses.",
-  "short_name": "CI Dashboard",
-  "start_url": "./index.html",
+  "name": "Civic Interconnect: Agent Status Dashboard",
+  "short_name": "CI Agents",
+  "description": "Monitoring Civic Interconnect Agent Statuses.",
+  "start_url": "/app-agents/",
+  "scope": "/app-agents/",
   "display": "standalone",
   "background_color": "#f4f4f4",
   "theme_color": "#007acc",
+  "lang": "en",
   "icons": [
     {
       "src": "./favicon_io/android-chrome-192x192.png",
